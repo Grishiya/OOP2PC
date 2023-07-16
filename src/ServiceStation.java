@@ -1,8 +1,15 @@
-public  class  ServiceStation implements Service {
-public void check(Vehicle transport) {
-    System.out.println("Обслуживание началось!");
+public class ServiceStation implements Service {
+    @Override
+    public void check(Vehicle transport) {
+        if (transport != null) {
+            System.out.println("Начинаем обслуживание " + transport.getModelName());
+            transport.service();
+        } else {
+            System.out.println("Ожидание...");
+            System.out.println();
+        }
+    }
+}
 
-    transport.service();
-    System.out.println(" Обслуживание завершено!");
-}
-}
+
+
