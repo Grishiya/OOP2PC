@@ -1,4 +1,4 @@
-public abstract class Vehicle extends ServiceStation {
+public abstract class Vehicle  {
     private String modelName;
     private int wheelsCount;
 
@@ -33,7 +33,6 @@ public abstract class Vehicle extends ServiceStation {
             this.updateTyre();
             System.out.println("покрышка " + (i + 1));
         }
-        System.out.println("Обслуживаие завершено! Приятной поездки!!!");
     }
 }
 
