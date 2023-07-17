@@ -9,7 +9,7 @@ public class ServiceStation implements Service {
             System.out.println("Ожидание...");
             System.out.println();
         }
-}
+    }
 }
 
 
